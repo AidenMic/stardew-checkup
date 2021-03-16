@@ -1955,25 +1955,109 @@ window.onload = function () {
 				795: "Void Salmon",
 				796: "Slimejack"
 			};
+			meta.canCatch = {
+				// "Fish" category
+				152: {/*Seaweed			*/	location: "Ocean",																			time: "Anytime",				season: "All Seasons",												weather: "Any",			difficulty: "N/A",			legend: 0},
+				153: {/*Green Algae		*/	location: "Everywhere but the Farm Pond of the Standard Farm",								time: "Anytime",				season: "All Seasons",												weather: "Any",			difficulty: "N/A",			legend: 0},
+				157: {/*White Algae		*/	location: "Mines • Sewers • Mutant Bug Lair • Witch's Swamp",								time: "Anytime",				season: "All Seasons",												weather: "Any",			difficulty: "N/A",			legend: 0},
+				// "Fish -4" category
+				128: {/*Pufferfish		*/	location: "Ocean",																			time: "12pm – 4pm",				season: "Summer",													weather: "Sun",			difficulty: "80 floater",	legend: 0},
+				129: {/*Anchovy			*/	location: "Ocean",																			time: "Anytime",				season: "Spring, Fall",												weather: "Any",			difficulty: "30 dart",		legend: 0},
+				130: {/*Tuna			*/	location: "Ocean",																			time: "6am – 7pm",				season: "Summer, Winter",											weather: "Any",			difficulty: "70 smooth",	legend: 0},
+				131: {/*Sardine			*/	location: "Ocean",																			time: "6am – 7pm",				season: "Spring, Fall, Winter",										weather: "Any",			difficulty: "30 dart",		legend: 0},
+				132: {/*Bream			*/	location: "River (Town+Forest)",															time: "6pm – 2am",				season: "All Seasons",												weather: "Any",			difficulty: "35 smooth",	legend: 0},
+				136: {/*Largemouth Bass	*/	location: "Mountain Lake",																	time: "6am – 7pm",				season: "All Seasons",												weather: "Any",			difficulty: "50 mixed",		legend: 0},
+				137: {/*Smallmouth Bass	*/	location: "River (Town), Forest Pond",														time: "Anytime",				season: "Spring, Fall",												weather: "Any",			difficulty: "28 mixed",		legend: 0},
+				138: {/*Rainbow Trout	*/	location: "River (Town+Forest), Mountain Lake",												time: "6am – 7pm",				season: "Summer",													weather: "Sun",			difficulty: "45 mixed",		legend: 0},
+				139: {/*Salmon			*/	location: "River (Town+Forest)",															time: "6am – 7pm",				season: "Fall",														weather: "Any",			difficulty: "50 mixed",		legend: 0},
+				140: {/*Walleye			*/	location: "River (Town+Forest), Forest Pond, Mountain Lake",								time: "12pm – 2am",				season: "Fall, Winter with Rain Totem",								weather: "Rain",		difficulty: "45 smooth",	legend: 0},
+				141: {/*Perch			*/	location: "River (Town+Forest), Forest Pond, Mountain Lake",								time: "Anytime",				season: "Winter",													weather: "Any",			difficulty: "35 dart",		legend: 0},
+				142: {/*Carp			*/	location: "Mountain Lake, Secret Woods Pond, The Sewers",   								time: "Anytime",				season: "All Seasons",												weather: "Any",			difficulty: "15 mixed",		legend: 0},
+				143: {/*Catfish			*/	location: "River (Town+Forest), Secret Woods Pond, Witch's Swamp",							time: "6am – 12am",				season: "Spring, Fall, (Spring &,  Summer in Secret Woods Pond)",	weather: "Rain",		difficulty: "75 mixed",		legend: 0},
+				144: {/*Pike			*/	location: "River (Town+Forest), Forest Pond",    											time: "Anytime",				season: "Summer, Winter",											weather: "Any",			difficulty: "60 dart",		legend: 0},
+				145: {/*Sunfish			*/	location: "River (Town+Forest)",															time: "6am – 7pm",				season: "Spring, Summer",											weather: "Sun, Wind",	difficulty: "30 mixed",		legend: 0},
+				146: {/*Red Mullet		*/	location: "Ocean",																			time: "6am – 7pm",				season: "Summer, Winter",											weather: "Any",			difficulty: "55 smooth",	legend: 0},
+				147: {/*Herring			*/	location: "Ocean",																			time: "Anytime",				season: "Spring, Winter",											weather: "Any",			difficulty: "25 dart",		legend: 0},
+				148: {/*Eel				*/	location: "Ocean",																			time: "4pm – 2am",				season: "Spring, Fall",												weather: "Rain",		difficulty: "70 smooth",	legend: 0},
+				149: {/*Octopus			*/	location: "Ocean",																			time: "6am – 1pm",				season: "Summer",													weather: "Any",			difficulty: "95 sinker",	legend: 0},
+				150: {/*Red Snapper		*/	location: "Ocean",																			time: "6am – 7pm",				season: "Summer, Fall, Winter with Rain Totem",						weather: "Rain",		difficulty: "40 mixed",		legend: 0},
+				151: {/*Squid			*/	location: "Ocean",																			time: "6pm – 2am",				season: "Winter",													weather: "Any",			difficulty: "75 sinker",	legend: 0},
+				154: {/*Sea Cucumber	*/	location: "Ocean",																			time: "6am – 7pm",				season: "Fall, Winter",												weather: "Any",			difficulty: "40 sinker",	legend: 0},
+				155: {/*Super Cucumber	*/	location: "Ocean, Ginger Island oceans",													time: "6pm – 2am",				season: "Summer, Fall",												weather: "Any",			difficulty: "80 sinker",	legend: 0},
+				156: {/*Ghostfish     	*/	location: "Mines (20, 60), Ghost drops",													time: "Anytime",				season: "All Seasons",												weather: "Any",			difficulty: "50 mixed",		legend: 0},
+				158: {/*Stonefish     	*/	location: "Mines 20F",																		time: "Anytime",				season: "All Seasons",												weather: "Any",			difficulty: "65 sinker",	legend: 0},
+				159: {/*Crimsonfish		*/	location: "East Pier on The Beach. Requires level 5 fishing.",								time: "Anytime",				season: "Summer",													weather: "Any",			difficulty: "95 mixed",		legend: 1},
+				160: {/*Angler			*/	location: "North of JojaMart on the wooden plank bridge. Requires level 3 fishing.",		time: "Anytime",				season: "Fall",														weather: "Any",			difficulty: "85 smooth",	legend: 1},
+				161: {/*Ice Pip			*/	location: "Mines 60F",																		time: "Anytime",				season: "All Seasons",												weather: "Any",			difficulty: "85 dart",		legend: 0},
+				162: {/*Lava Eel		*/	location: "Mines 100F, Volcano Caldera",													time: "Anytime",				season: "All Seasons",												weather: "Any",			difficulty: "90 mixed",		legend: 0},
+				163: {/*Legend			*/	location: "The Mountain Lake near the log. Requires level 10 fishing.",						time: "Anytime",				season: "Spring",													weather: "Rain",		difficulty: "110 mixed",	legend: 1},
+				164: {/*Sandfish		*/	location: "The Desert",																		time: "6am – 8pm",				season: "All Seasons",												weather: "Any",			difficulty: "65 mixed",		legend: 0},
+				165: {/*Scorpion Carp	*/	location: "The Desert, Requires fishing level 4",											time: "6am – 8pm",				season: "All Seasons",												weather: "Any",			difficulty: "90 dart",		legend: 0},
+				682: {/*Mutant Carp		*/	location: "The Sewers",																		time: "Anytime",				season: "All Seasons",												weather: "Any",			difficulty: "80 dart",		legend: 1},
+				698: {/*Sturgeon		*/	location: "Mountain Lake",													 				time: "6am – 7pm",				season: "Summer, Winter",											weather: "Any",			difficulty: "78 mixed",		legend: 0},
+				699: {/*Tiger Trout		*/	location: "River (Town+Forest)",											 				time: "6am – 7pm",				season: "Fall, Winter",												weather: "Any",			difficulty: "60 dart",		legend: 0},
+				700: {/*Bullhead		*/	location: "Mountain Lake",													 				time: "Anytime",				season: "All Seasons",												weather: "Any",			difficulty: "46 smooth",	legend: 0},
+				701: {/*Tilapia 		*/	location: "Ocean, Ginger Island rivers",									 				time: "6am – 2pm",				season: "Summer, Fall",												weather: "Any",			difficulty: "50 mixed",		legend: 0},
+				702: {/*Chub    		*/	location: "Forest River, Mountain Lake",									 				time: "Anytime",				season: "All Seasons	",											weather: "Any",			difficulty: "35 dart",		legend: 0},
+				704: {/*Dorado  		*/	location: "River (Forest)",													 				time: "6am – 7pm",				season: "Summer",													weather: "Any",			difficulty: "78 mixed",		legend: 0},
+				705: {/*Albacore		*/	location: "Ocean",															 				time: "6am – 11am, 6pm – 2am",	season: "Fall, Winter",												weather: "Any",			difficulty: "60 mixed",		legend: 0},
+				706: {/*Shad			*/	location: "River (Town+Forest)",											 				time: "9am – 2am",				season: "Spring, Summer, Fall",										weather: "Rain",		difficulty: "45 smooth",	legend: 0},
+				707: {/*Lingcod			*/	location: "River (Town+Forest), Mountain Lake",								 				time: "Anytime",				season: "Winter",													weather: "Any",			difficulty: "85 mixed",		legend: 0},
+				708: {/*Halibut			*/	location: "Ocean",															 				time: "6am – 11am, 7pm – 2am",	season: "Spring, Summer, Winter",									weather: "Any",			difficulty: "50 sinker",	legend: 0},
+				715: {/*Lobster			*/	location: "Ocean (Crab pot)",																time: "Anytime",				season: "All Seasons",												weather: "Any",			difficulty: "N/A",			legend: 0},
+				716: {/*Crayfish		*/	location: "Freshwater (Crab pot)",															time: "Anytime",				season: "All Seasons",												weather: "Any",			difficulty: "N/A",			legend: 0},
+				717: {/*Crab			*/	location: "Ocean (Crab pot)",																time: "Anytime",				season: "All Seasons",												weather: "Any",			difficulty: "N/A",			legend: 0},
+				718: {/*Cockle			*/	location: "Ocean (Crab pot)",																time: "Anytime",				season: "All Seasons",												weather: "Any",			difficulty: "N/A",			legend: 0},
+				719: {/*Mussel			*/	location: "Ocean (Crab pot)",																time: "Anytime",				season: "All Seasons",												weather: "Any",			difficulty: "N/A",			legend: 0},
+				720: {/*Shrimp			*/	location: "Ocean (Crab pot)",																time: "Anytime",				season: "All Seasons",												weather: "Any",			difficulty: "N/A",			legend: 0},
+				721: {/*Snail			*/	location: "Freshwater (Crab pot)",															time: "Anytime",				season: "All Seasons",												weather: "Any",			difficulty: "N/A",			legend: 0},
+				722: {/*Periwinkle		*/	location: "Freshwater (Crab pot)",															time: "Anytime",				season: "All Seasons",												weather: "Any",			difficulty: "N/A",			legend: 0},
+				723: {/*Oyster			*/	location: "Ocean (Crab pot)",																time: "Anytime",				season: "All Seasons",												weather: "Any",			difficulty: "N/A",			legend: 0},
+				734: {/*Woodskip		*/	location: "Secret Woods Pond, Forest Farm",									 				time: "Anytime",				season: "All Seasons",												weather: "Any",			difficulty: "50 mixed",		legend: 0},
+				775: {/*Glacierfish		*/	location: "South end of Arrowhead Island in Cindersap Forest. Requires level 6 fishing.",	time: "Anytime",				season: "Winter",													weather: "Any",			difficulty: "100 mixed",	legend: 1},
+				795: {/*Void Salmon		*/	location: "Witch's Swamp",													 				time: "Anytime",				season: "All Seasons",												weather: "Any",			difficulty: "80 mixed",		legend: 0},
+				796: {/*Slimejack		*/	location: "Mutant Bug Lair",												 				time: "Anytime",				season: "All Seasons",												weather: "Any",			difficulty: "55 dart",		legend: 0}
+			};
 		if (compareSemVer(saveInfo.version, "1.3") >= 0) {
 			meta.recipes[798] = 'Midnight Squid';
 			meta.recipes[799] = 'Spook Fish';
 			meta.recipes[800] = 'Blobfish';
+			//'Midnight Squid'
+			meta.canCatch[798] = {			location: "Night Market Submarine Ride",													time: "5pm - 2am",				season: "Winter",													weather: "Any",			difficulty: "55 Sinker",	legend: 0};
+			//'Spook Fish'
+			meta.canCatch[799] = {			location: "Night Market Submarine Ride",													time: "5pm - 2am",				season: "Winter",													weather: "Any",			difficulty: "60 Dart",		legend: 0};
+			//'Blobfish'
+			meta.canCatch[800] = {			location: "Night Market Submarine Ride",													time: "5pm - 2am",				season: "Winter",													weather: "Any",			difficulty: "75 Floater",	legend: 0};
 		}
 		if (compareSemVer(saveInfo.version, "1.4") >= 0) {
 			meta.recipes[269] = 'Midnight Carp';
 			meta.recipes[267] = 'Flounder';
+			//'Midnight Carp'
+			meta.canCatch[269] = {			location: "Mountain Lake, Cindersap Forest pond, Ginger Island pond and river",				time: "10pm – 2am",				season: "Fall, Winter",												weather: "Any",			difficulty: "55 mixed",		legend: 0};
+			//'Flounder'
+			meta.canCatch[267] = {			location: "Ocean, Ginger Island oceans",         											time: "6am – 8pm",				season: "Spring, Summer",											weather: "Any",			difficulty: "50 sinker",	legend: 0};
 		}
 		if (compareSemVer(saveInfo.version, "1.5") >= 0) {
 			meta.recipes[836] = 'Stingray';
 			meta.recipes[837] = 'Lionfish';
 			meta.recipes[838] = 'Blue Discus';
+			//'Stingray'
+			meta.canCatch[836] = {			location: "Pirate Cove (Ginger Island)",									 				time: "Anytime",				season: "All Seasons",												weather: "Any",			difficulty: "80 sinker",	legend: 0};
+			//'Lionfish'
+			meta.canCatch[837] = {			location: "Ginger Island Ocean",											 				time: "Anytime",				season: "All Seasons",												weather: "Any",			difficulty: "50 smooth",	legend: 0};
+			//'Blue Discus'
+			meta.canCatch[838] = {			location: "Ginger Island Pond and Rivers",									 				time: "Anytime",				season: "All Seasons",												weather: "Any",			difficulty: "60 dart",		legend: 0};
 			// Ones which don't count for collection/achieve must be commented out; we may look at handling them later
 			//meta.recipes[898] = 'Son of Crimsonfish';
 			//meta.recipes[899] = 'Ms. Angler';
 			//meta.recipes[900] = 'Legend II';
 			//meta.recipes[901] = 'Radioactive Carp';
 			//meta.recipes[902] = 'Glacierfish Jr.';
+			//meta.canCatch[898] = {/*Son of Crimsonfish*/	location: "East Pier on The Beach. Requires level 5 fishing. (Only found during Mr. Qi's Extended Family Quest)",								time: "Anytime",	season: "All Seasons",	weather: "Any",	difficulty: "95 mixed",		legend: 1};
+			//meta.canCatch[899] = {/*Ms. Angler		*/	location: "North of JojaMart on the wooden plank bridge. Requires level 3 fishing. (Only found during Mr. Qi's Extended Family Quest)",			time: "Anytime",	season: "All Seasons",	weather: "Any",	difficulty: "85 smooth",	legend: 1};
+			//meta.canCatch[900] = {/*Legend II			*/	location: "The Mountain Lake near the log. Requires level 10 fishing. (Only found during Mr. Qi's Extended Family Quest)",						time: "Anytime",	season: "All Seasons",	weather: "Any",	difficulty: "110 mixed",	legend: 1};
+			//meta.canCatch[901] = {/*Glacierfish Jr.	*/	location: "South end of Arrowhead Island in Cindersap Forest. Requires level 6 fishing. (Only found during Mr. Qi's Extended Family Quest)",	time: "Anytime",	season: "All Seasons",	weather: "Any",	difficulty: "100 mixed",	legend: 1};
+			//meta.canCatch[902] = {/*Radioactive Carp	*/	location: "The Sewers (Only found during Mr. Qi's Extended Family Quest)",																		time: "Anytime",	season: "All Seasons",	weather: "Any",	difficulty: "80 dart",		legend: 1};
 		}
 		table[0] = parsePlayerFishing($(xmlDoc).find('SaveGame > player'), saveInfo, meta);
 		if (saveInfo.numPlayers > 1) {
@@ -2093,7 +2177,7 @@ window.onload = function () {
 				if (meta.recipes.hasOwnProperty(id)) {
 					r = meta.recipes[id];
 					if (!known.hasOwnProperty(r)) {
-						need.push('<li>' + wikify(r) + '</li>');
+						need.push('<li>' + wikify(r) + JSON.stringify(meta.canCatch[id]) + '</li>');
 					}
 				}
 			}
